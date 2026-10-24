@@ -1,0 +1,40 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: php-practice-exercises-lessons-v1_nginx
+    ports:
+      - 19791:80
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=lessons.ktu10.loc
+      - VIRTUAL_PORT=80
+    volumes:
+      - './config/nginx/:/etc/nginx/conf.d/'
+      - '../:/var/www/project'
+    depends_on:
+      - app
+    networks:
+      - proxy_network
+      - lessons_network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-practice-exercises-lessons-v1_php
+    working_dir: /var/www/project
+    volumes:
+      - '../:/var/www/project'
+      - './config/php-fpm/docker-php-ext-xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - lessons_network
+
+networks:
+  proxy_network:
+    name: nginx_dev_local_network
+    external: true
+  lessons_network:
+    name: php-practice-exercises-lessons-v1_network
