@@ -8,7 +8,12 @@
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
-            "port": 9003
+            "port": 9003,
+            // в контейнере проект смонтирован как /var/www/project
+            // (см. lessons-v1/docker/docker-compose.yml)
+            "pathMappings": {
+                "/var/www/project": "${workspaceFolder}/lessons-v1"
+            }
         },
         {
             "name": "Launch currently open script",
