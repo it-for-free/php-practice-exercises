@@ -15,6 +15,6 @@
 После запуска контейнеров:
 * главная страница со списком уроков: http://localhost:19791/
 * урок открывается по адресу http://localhost:19791/lessons/<имя-папки>/
-  (например, http://localhost:19791/lessons/lesson01-hello/)
+  (например, http://localhost:19791/lessons/lesson01-html-date/)
 * служебные файлы репозитория (docker/, Makefile, .md в корне) по URL
   не отдаются - для них настроен 404 в nginx.

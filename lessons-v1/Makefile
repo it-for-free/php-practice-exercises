@@ -20,8 +20,8 @@ about:
      \n ${green}docker.rebuild.all${reset} - пересоберет и запустит контейнеры заново \
      \n ${green}sh.php${reset} - зайдет в консоль php-контейнера \
      \n ${green}sh.nginx${reset} - зайдет в консоль nginx-контейнера \
-     \n ${green}run${reset} - выполнит php-файл: make run file=lessons/lesson01-hello/index.php \
-     \n ${green}debug${reset} - то же, но с включенным xdebug-отладчиком: make debug file=lessons/lesson01-hello/index.php \
+     \n ${green}run${reset} - выполнит php-файл: make run file=lessons/lesson01-html-date/index.php \
+     \n ${green}debug${reset} - то же, но с включенным xdebug-отладчиком: make debug file=lessons/lesson01-html-date/index.php \
 	"
 
 # DOCKER---------------------------------------
