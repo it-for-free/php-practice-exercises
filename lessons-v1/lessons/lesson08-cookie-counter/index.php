@@ -13,6 +13,7 @@ setcookie('visits', (string) $visits);
   <title>Счётчик посещений</title>
 </head>
 <body>
+  <p><a href="https://fkn.ktu10.com/?q=node/17713">[Урок 8 на сайте]</a></p>
   <h1>Счётчик посещений</h1>
   <p>Количество ваших визитов: <?php echo $visits; ?></p>
 </body>
