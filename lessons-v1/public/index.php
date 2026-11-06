@@ -15,6 +15,7 @@ echo '<li><a href="/lessons/lesson08-cookie-counter/">Урок 8: куки (сч
 echo '<li><a href="/lessons/lesson09-sessions/">Урок 9: сессии (счётчик на сервере)</a></li>';
 echo '<li><a href="/lessons/lesson10-auth/login.php">Урок 10: простейшая авторизация</a></li>';
 echo '<li><a href="/lessons/lesson11-logout/login.php">Урок 11: выход (logout и session_destroy)</a></li>';
+echo '<li><a href="/lessons/lesson12-routing/">Урок 12: маршрутизация (несколько страниц на одном index.php)</a></li>';
 echo '</ul>';
 
 // Подсказка: как запустить отладку урока из браузера
