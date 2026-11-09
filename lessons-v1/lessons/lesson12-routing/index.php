@@ -36,8 +36,7 @@ if ($page === 'about') {
   <title>Мой сайт - <?php echo $title; ?></title>
 </head>
 <body>
-  <!-- TODO: после публикации добавить ссылку на урок,
-       как в других уроках -->
+  <p><a href="https://fkn.ktu10.com/?q=node/17732">[Урок 12 на сайте]</a></p>
   <h1>Мой сайт</h1>
   <ul>
     <li><a href="index.php">Главная</a></li>
